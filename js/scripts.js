@@ -1,13 +1,31 @@
-//remove duplicates in an array
-let array = [1, 2, 5, 2, 1, 8];
-let newArray = [];
+//remove duplicates from an array
 
-for (let i = 0; i < array.length; i++) {
-  if ( newArray.indexOf(array[i]) === -1) {
-    newArray.push(array[i])
+let myArray = [1, 8, 12, 6, 1, 4, 3, 8, 10];
+
+let newArray = [];
+function removeDuplicates(array) {
+  for (let i = 0; i < myArray.length; i++) {
+    if (newArray.indexOf(array[i]) === -1) {
+      newArray.push(array[i])
+    }
   }
 }
+
+removeDuplicates(myArray);
 console.log(newArray);
+
+
+//remove duplicates in an array (basic version without a function)
+
+// let array = [1, 2, 5, 2, 1, 8];
+// let newArray = [];
+//
+// for (let i = 0; i < array.length; i++) {
+//   if ( newArray.indexOf(array[i]) === -1) {
+//     newArray.push(array[i])
+//   }
+// }
+// console.log(newArray);
 
 //CODE EXPLANATION:
 //we create an array in a variable
@@ -27,7 +45,7 @@ console.log(newArray);
 
 
 
-
+//OLD SOLUTIONS
 // function find_duplicate_in_array(arra1) {
 //   var i,
 //   len=arra1.length,
